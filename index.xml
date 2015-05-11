@@ -1,0 +1,19 @@
+ <craft>
+ <script type="text/craftml">
+    
+         function main(){
+            var cubes = []
+            var r = 30, n = 30, theta = 0
+            var delta = 2 * Math.PI / n
+            for (var i = 0; i < n; i++){                
+                var x = r * Math.cos(theta)
+                var y = r * Math.sin(theta)
+                cubes.push('<cube x="' + x + '" y="' + y + '" size="1"/>')
+                theta = theta + delta
+            }                        
+            return cubes.join('\n') 
+        }                                                              
+    </script>
+</craft>
+
+   
